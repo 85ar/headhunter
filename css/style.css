@@ -958,31 +958,148 @@ body {
     width: 497px;
     height: 494px;
   }
+  .footer-logo {
+    margin-right: 80px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
   }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__text {
+    width: 100%;
+  }
   .hero__title {
-    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+    width: 500px;
   }
   .hero__description {
-    font-size: 12px;
+    margin: 20px auto;
+    text-align: center;
+    width: 400px;
+  }
+  .hero__image {
+    margin: 10px auto;
+  }
+  .input-group {
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
   .cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-@media (max-width: 767px) {
+  .cards__item {
+    margin: 10px;
+  }
+  .example {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .offers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .offers__item {
+    padding: 30px 53px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 10px;
+    width: 290px;
+    height: 441px;
+  }
+  .offers__image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .offers-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .offers-text__title {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .offers-text__place {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .offers__salary {
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+  }
+  .offers__details {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .demands {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .demands__title {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .demands__skils {
+    font-size: 14px;
+  }
+  .footer-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  .footer-contact {
+    width: 200px;
+  }
+  .footer-info {
+    width: 200px;
+  }
+  .footer-navigation {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1007,8 +1124,8 @@ body {
     color: #1A75E8;
     border: 1px solid #1A75E8;
   }
-  .input-group__text:hover {
-    outline: 1px dotted #1A75E8;
+  .input-group:hover {
+    border: 1px solid #1A75E8;
   }
   .cards__item:hover {
     background-color: #1A75E8;

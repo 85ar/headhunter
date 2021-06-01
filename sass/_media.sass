@@ -41,23 +41,101 @@
     &__image
       width: 497px
       height: 494px
-
+  .footer
+    &-logo
+      margin-right: 80px
 @media (max-width: 992px)
   .container
     max-width: 700px
   .hero
+    flex-direction: column
+    &__text
+      width: 100%
     &__title
-      font-size: 30px
+      margin: 10px auto
+      text-align: center
+      width: 500px
     &__description
-      font-size: 12px
+      margin: 20px auto
+      text-align: center
+      width: 400px
+    &__image
+      margin: 10px auto
+  .input
+    &-group
+      margin: auto
+      margin-bottom: 30px
+      margin-top: 30px
   .cards
     flex-wrap: wrap
-@media (max-width: 767px)
-  .offers
     &__item
+      margin: 10px
+  .example
+    justify-content: center
+    margin-bottom: 10px
+  .offers
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    flex-wrap: wrap
+    &__item
+      padding: 30px 53px
       flex-direction: column
-      margin-right: 10px
-  
+      width: 290px
+      height: 441px
+    &__image
+      width: 100px
+      height: 100px
+      margin: auto
+      margin-bottom: 30px
+    &-text
+      width: 100%
+      margin: 0 auto
+      &__title
+        font-size: 16px
+        margin: 0 auto
+        margin-bottom: 10px
+      &__place
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        margin-bottom: 30px
+    &__salary
+      margin: 0 auto
+      font-size: 16px
+      padding: 10px 25px
+      margin-bottom: 30px
+    &__details
+      font-size: 14px
+      line-height: 17px
+  .demands
+    margin: 0 auto
+    margin-bottom: 30px
+    &__title
+      margin: 0 auto
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 15px
+    &__skils
+      font-size: 14px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-between
+    &-logo
+      margin-bottom: 40px
+    &-contact
+      width: 200px
+    &-info
+      width: 200px
+    &-navigation
+      width: 200px
+      // justify-content: space-evenly
+
+@media (max-width: 768px)
+  .footer
+    &-description
+      flex-direction: column
   
 
 // @media (max-width: 576px)
@@ -90,9 +168,8 @@
         border: 1px solid #1A75E8
   .input
     &-group
-      &__text
-        &:hover
-          outline: 1px dotted #1A75E8
+      &:hover
+        border: 1px solid #1A75E8
   .cards
     &__item
       &:hover
